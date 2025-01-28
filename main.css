@@ -1,0 +1,65 @@
+/* ==UserStyle==
+@name           Warm Text (Dark)
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Warmer whites for dark mode (complements Gruvbox well)
+@author         Yocracra
+==/UserStyle== */
+@-moz-document domain("chatgpt.com") {
+    :root {
+        --white: #fbf1c7; /* Gruvbox Light 1 */
+        --black: #282828; /* Gruvbox Dark 0 */
+        --gray-50: #fbf1c7; /* Gruvbox Light 1 */
+        --gray-100: #ebdbb2; /* Gruvbox Light 0 */
+        --gray-200: #d5c4a1; /* Gruvbox Light 4 */
+        --gray-300: #bdae93; /* Gruvbox Light 3 */
+        --gray-400: #a89984; /* Gruvbox Light 2 */
+        --gray-500: #928374; /* Gruvbox Gray */
+        --gray-600: #665c54; /* Gruvbox Dark 4 */
+        --gray-700: #504945; /* Gruvbox Dark 3 */
+        --gray-750: #3c3836; /* Gruvbox Dark 2 */
+        --gray-800: #282828; /* Gruvbox Dark 0 */
+        --gray-900: #1d2021; /* Gruvbox Dark 1 */
+        --gray-950: #141414; /* Custom, darker than Dark 1 */
+        --red-500: #fb4934; /* Gruvbox Bright Red */
+        --red-700: #cc241d; /* Gruvbox Red */
+        --brand-purple: #d3869b; /* Gruvbox Purple */
+
+
+        .dark {
+            --main-surface-background: rgba(33, 33, 33, .9);
+            --message-surface: rgba(50, 50, 50, .85);
+            --dot-color: var(--white);
+            --text-primary: var(--gray-100);
+            --text-secondary: var(--gray-400);
+            --text-tertiary: var(--gray-500);
+            --text-quaternary: var(--gray-600);
+            --text-placeholder: hsla(0, 0%, 100%, .8);
+            --text-error: #fb4934; /* Gruvbox Bright Red */
+            --border-xlight: hsla(0, 0%, 100%, .05);
+            --border-light: hsla(0, 0%, 100%, .1);
+            --border-medium: hsla(0, 0%, 100%, .15);
+            --border-heavy: hsla(0, 0%, 100%, .2);
+            --border-xheavy: hsla(0, 0%, 100%, .25);
+            --border-sharp: hsla(0, 0%, 100%, .05);
+            --main-surface-primary: var(--gray-800);
+            --main-surface-primary-inverse: var(--white);
+            --main-surface-secondary: var(--gray-750);
+            --main-surface-tertiary: var(--gray-700);
+            --sidebar-surface-primary: var(--gray-900);
+            --sidebar-surface-secondary: var(--gray-800);
+            --sidebar-surface-tertiary: var(--gray-750);
+            --sidebar-title-primary: hsla(0, 0%, 94%, .5);
+            --sidebar-body-primary: #ebdbb2; /* Gruvbox Light 0 */
+            --sidebar-icon: #a89984; /* Gruvbox Light 2 */
+            --link: #8ec07c; /* Gruvbox Light Aqua */
+            --link-hover: #83a598; /* Gruvbox Light Blue */
+            --surface-error: 249 58 55;
+        }
+        
+        /* "Attach files" Button */
+        .dark\:text-white:is(.dark *) {
+            color: rgb(var(--gray-100)/var(--tw-text-opacity));
+        }
+    }
+}
